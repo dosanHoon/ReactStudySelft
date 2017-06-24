@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Search = () => {
+
+//http://localhost:3000/search?keyword=etst
+//{new URLSearchParams(location.search).get('keyword')}
+// url param get
+const Search = ({location}) => {
     return (
         <div>
-            Search
+            {new URLSearchParams(location.search).get('keyword')} 검색
         </div>
-    )
-}
+    );
+};
 
-export default Search
+export default Search;

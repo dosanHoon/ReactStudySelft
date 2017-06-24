@@ -1,0 +1,9 @@
+.post.link{
+    font-size : 15px;
+    margin-right:5px;
+    color : #456456;
+}
+
+.post.link:last-child {
+    margin-right : 0;
+}
